@@ -1,0 +1,588 @@
+<!-- booking-form.component.html
+<header style="position: relative;">
+  <img src="../../../assets/home-images/tempoz.jpg" alt="" style="width: 100%; height: 400px;">
+  <h1 style="position: absolute; top: 61%; left: 50%; transform: translate(-50%, -50%); 
+  color: white; font-family: Helvetica; text-align: left; font-weight: bold; font-size: 50px;">Book Now</h1>
+</header>
+<div class="container">
+  <div class="card-container">
+    <div class="card">
+      <i class="fa-solid fa-clock" style="margin-top: 20px; text-align: center; color:rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+        font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">
+      SAVES YOU TIME</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Our service helps you live smarter, giving you time to focus on what's most important.</p>
+
+
+        <i class="fa-solid fa-shield-heart" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">SAFETY FIRST</h4>
+        <p style="box-sizing: border-box; color: #6d6e73;  text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">We rigorously vet all professional cleaners, who undergo identity checks as well as in-person interviews.</p>
+        
+        
+        <i class="fa-solid fa-thumbs-up" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">ONLY THE BEST QUALITY</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Skilled professionals go above and beyond on every job. Cleaners are rated and reviewed after each task.</p>
+        
+        
+        
+        
+        
+        
+        <i class="fa-solid fa-wand-magic-sparkles" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">EASY TO GET HELP</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Select your ZIP code, number of bedrooms and square footage, date and relax while we take care of your home.</p>
+        
+        
+        
+        <i class="fa-regular fa-message" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">SEAMLESS COMMUNICATION</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Online communication makes it easy for you to stay in touch with our support team.</p>
+        
+        
+        
+        
+        <i class="fa-brands fa-cc-visa" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica;
+        font-weight: bold;
+        line-height: 1.1;
+        text-align: center;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        padding: 0px 20px;">CASH FREE PAYMENT</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Pay securely online only when the cleaning is complete.</p>
+    </div>
+  
+  <div class="card" style="margin-top: 3%;">
+    <h2 style="box-sizing: border-box;
+    font-family: Helvetica;
+  line-height: 1.1;
+  color:  #364F6B;
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  padding: 0px 20px;">BOOKING SUMMARY</h2>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-home" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+      <label style="font-weight: normal; font-size: 18px; font-family: Helvetica; color: rgb(55, 62, 74);">Service:</label>
+      </div>
+      <label style="font-weight: normal; font-size: 16px; color: rgba(236, 181, 2, 1); font-size: 24px; margin-left: 10px;">{{ formData.selected_service }}</label>
+    </div>
+    <div *ngIf="showAreaDropdown()" style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-city" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+      <label style="font-weight: normal; font-size: 18px; font-family: Helvetica; color: rgb(55, 62, 74);">Area:</label>
+      </div>
+      <label style="font-weight: normal; font-size: 16px; color: rgba(236, 181, 2, 1); font-size: 24px; margin-left: 10px;">{{ formData.selected_area }}</label>
+    </div>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-calendar-alt" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+      <label style="font-weight: normal; font-size: 18px; font-family: Helvetica; color: rgb(55, 62, 74);">Date:</label>
+      </div>
+      <label style="font-weight: normal; font-size: 16px; color: rgba(236, 181, 2, 1); font-size: 24px; margin-left: 10px;">{{ formData.selected_date}} {{formData.selected_time}}</label>
+    </div>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-clock" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+      <label style="font-weight: normal; font-size: 18px; font-family: Helvetica; color: rgb(55, 62, 74);">How Often:</label>
+      </div>
+      <label style="font-weight: normal; font-size: 16px; color: rgba(236, 181, 2, 1); font-size: 24px; margin-left: 10px;">{{ formData.cleaning_frequency }}</label>
+    </div>
+    <div style="padding: 0 3% ; display: flex; align-items: center; justify-content: space-between;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-money-bill" style="text-align: center; color: rgba(236, 181, 2, 1)"></i>
+      <label style="font-weight: normal; font-size: 18px; font-family: Helvetica; color: rgb(55, 62, 74);">Total:</label>
+      </div>
+      <label style="font-weight: normal; font-size: 16px; font-family: Helvetica; color: rgba(236, 181, 2, 1); font-size: 44px; margin-left: 10px;">${{ calculateTotalPrice() }}</label>
+    </div>
+  </div>
+  </div>
+    <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container" style="margin-right: 12%;">
+      <h2 style="font-family: Helvetica; text-align: left; padding-bottom: 10px">Complete your Booking.</h2>
+      <h6 style="font-weight: 100; font-family: Helvetica;
+      color: #373e4a;">Great! Few details and we can complete your booking. </h6>
+    <hr>
+      
+      <div class="form-group" style="margin-bottom: 30px;">
+        <label for="name" style="font-weight: 100; font-family: Helvetica;
+        color: #373e4a;">STEP 1: CHOOSE YOUR SERVICE</label>
+            <span style="font-family: Helvetica;
+            color: #ababab; font-weight: 100; line-height: 1.42857143;">Tell us about your home.</span>
+        <select id="name" name="name" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_service" required>
+          <option value="" style="display: none;" disabled selected>Select a Service</option>
+          <option value="Standard Cleaning Package" (click)="selectService('Standard Cleaning Package')" [selected]="formData.selected_service === 'Standard Cleaning Package'">Standard Cleaning Package</option>
+          <option value="Signature Cleaning Package" (click)="selectService('Signature Cleaning Package')" [selected]="formData.selected_service === 'Signature Cleaning Package'">Signature Cleaning Package</option>
+          <option value="Platinum Cleaning Package" (click)="selectService('Platinum Cleaning Package')" [selected]="formData.selected_service === 'Platinum Cleaning Package'">Platinum Cleaning Package</option>
+          <option value="Laundry" (click)="selectService('Laundry')" [selected]="formData.selected_service === 'Laundry'">Laundry</option>
+          <option value="Fridge Interior Cleaning" (click)="selectService('Fridge Interior Cleaning')" [selected]="formData.selected_service === 'Fridge Interior Cleaning'">Fridge Interior Clean</option>
+          <option value="Window Sill Cleaning" (click)="selectService('Window Sill Cleaning')" [selected]="formData.selected_service === 'Window Sill Cleaning'">Window Sill Cleaning</option>
+          <option value="Pantry Organization" (click)="selectService('Pantry Organization')" [selected]="formData.selected_service === 'Pantry Organization'">Pantry Organization</option>
+          <option value="Closet Organization" (click)="selectService('Closet Organization')" [selected]="formData.selected_service === 'Closet Organization'">Closet Organization</option>
+          <option value="Vents Cleaning" (click)="selectService('Vents Cleaning')" [selected]="formData.selected_service === 'Vents Cleaning'">Vents Cleaning</option>
+        </select> 
+        
+        <select *ngIf="showAreaDropdown()" id="area" name="area" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_area" required>
+          <option value="" style="display: none;" disabled selected>Select the Area Range</option>
+          <option value="Area upto 2500 sq ft" (click)="selectArea('Area upto 2500 sq ft')" [selected]="formData.selected_area === 'Area upto 2500 sq ft'">Area upto 2500 sq ft</option>
+          <option value="Area upto 3500 sq ft" (click)="selectArea('Area upto 3500 sq ft')" [selected]="formData.selected_area === 'Area upto 3500 sq ft'">Area upto 3500 sq ft</option>
+          <option value="Area upto 5000 sq ft" (click)="selectArea('Area upto 5000 sq ft')" [selected]="formData.selected_area === 'Area upto 5000 sq ft'">Area upto 5000 sq ft</option>
+        </select> 
+      </div>
+      
+        <label style="font-weight: 100; font-family: Helvetica;
+        color: #373e4a;">STEP 2: WHO YOU ARE</label>
+        <span style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">This information will be used to contact you about your service.</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%; height:80%">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Helvetica,Helvetica">
+            <input type="text" id="first_name" name="first_name" [(ngModel)]="formData.first_name" placeholder="First Name" required>
+          </div>
+          <div style="width: 48%; font:100 16px Helvetica,Helvetica">
+            <input type="text" id="last_name" name="last_name" [(ngModel)]="formData.last_name"  placeholder="Last Name" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; height:80%; margin-top:15px">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Helvetica,Helvetica">
+            <input type="text" id="email" name="email" [(ngModel)]="formData.email" placeholder="Email" required>
+          </div>
+          <div style="width: 48%; font:100 16px Helvetica,Helvetica">
+            <input type="text" id="mobile_number" name="mobile_number" [(ngModel)]="formData.mobile_number" placeholder="Mobile Number**" required>
+          </div>
+          </div>
+        
+        
+    </div>
+
+      <label style="font-weight: 100; font-family: Helvetica;
+      color: #373e4a;">STEP 3: YOUR HOME</label>
+        <span style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Where would you like us to clean?</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%;">
+
+           Address takes 100% of the line -
+          <div style="width: 100%;">
+            <input type="text" id="address" name="address" [(ngModel)]="formData.address" placeholder="Address" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; margin-top: 15px">
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="apt_suite" name="apt_suite" placeholder="Apt/Suite #" [(ngModel)]="formData.apt_suite">
+          </div>
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="formData.city" required>
+          </div>
+          <div style="width: 20%;">
+            <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code" [(ngModel)]="formData.zip_code" required>
+          </div>
+        </div>
+        </div>
+
+        
+           Apt/Suite #, City, and Zip Code in the same line with a ratio of 4:4:2 
+          
+        
+          
+        
+          <label style="font-weight: 100; font-family: Helvetica;
+          color: #373e4a;">STEP 4: WHEN WOULD YOU LIKE US TO COME?</label>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div class="row" style="margin-right: 0;">
+          <div class="col-md-6 mb-3">
+            <label for="selected_date" style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Date:</label>
+            <input type="date" id="selected_date" name="selected_date" [(ngModel)]="formData.selected_date" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="selected_time" style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Time:</label>
+            <select id="selected_time" name="selected_time" [(ngModel)]="formData.selected_time" class="form-control" required>
+              <option *ngFor="let hour of generateHours()" [value]="hour">{{ hour }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  
+    <div class="form-group" style="margin-bottom: 30px;">
+      <label style="font-weight: 100; font-family: Helvetica;
+      color: #373e4a;">STEP 5: HOW OFTEN?</label>
+      <span style="font-family: Helvetica; color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
+      <div class="button-group">
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Every 3 Weeks'"
+                  (click)="selectFrequency('Every 3 Weeks')">Every 3 Weeks</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'One Time'"
+                  (click)="selectFrequency('One Time')">One Time</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Monthly'"
+                  (click)="selectFrequency('Monthly')">Monthly</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Biweekly'"
+                  (click)="selectFrequency('Biweekly')">Biweekly</button>
+
+                  <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Weekly'"
+                  (click)="selectFrequency('Weekly')">Weekly</button>
+      </div>
+  </div>
+  <div class="form-group">
+    <div class="option-container">
+      <input type="checkbox" id="movingInOut" name="movingInOut" value="movingInOut">
+      <label for="movingInOut" class="option-label" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Moving In/Out</label>
+      <span class="tick"></span>
+    </div>
+    
+    <div class="option-container">
+      <input type="checkbox" id="balconyCleaning" name="balconyCleaning" value="balconyCleaning">
+      <label for="balconyCleaning" class="option-label" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Balcony Cleaning</label>
+      <span class="tick"></span>
+    </div>
+
+  </div>
+  
+
+  <div class="form-group">
+    <label for="additional_notes" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Additional Information:</label>
+    <textarea id="additional_notes" name="additional_notes" [(ngModel)]="formData.additional_notes"></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-6 mb-3">
+      <label class="form-label" for="parking_option" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
+      <select id="parking_option" name="parking_option" [(ngModel)]="formData.parking_option" class="form-select" style="width: 100%;
+      padding: 5px;
+      color: #555; font-weight:400;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;">
+        <option selected style="color: #555; font-weight:400; display: block;" value="street_parking" >Street Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="driveway">Driveway</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_pass">Parking Pass</option>
+        <option style="color: #555; font-weight:400; display: block;"value="guest_parking">Guest Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_lot">Parking Lot</option>
+      </select>
+    </div>
+</div>
+    
+      <button type="submit" class="submit-button" [disabled]="!bookNowForm.valid">Submit</button>
+    </form>
+  </div>  -->
+  
+
+  <header class="header-container">
+    <img src="../../../assets/home-images/tempoz.jpg" alt="" class="header-image">
+    <h1 class="header-title">Book Now</h1>
+  </header>
+  
+  <div class="container">
+    <div class="card-container temp">
+      <div class="card">
+        <i class="fa-solid fa-clock card-icon"></i>
+        <h4 class="card-heading">SAVES YOU TIME</h4>
+        <p class="card-text">Our service helps you live smarter, giving you time to focus on what's most important.</p>
+  
+        <i class="fa-solid fa-shield-heart card-icon"></i>
+        <h4 class="card-heading">SAFETY FIRST</h4>
+        <p class="card-text">We rigorously vet all professional cleaners, who undergo identity checks as well as in-person interviews.</p>
+  
+        <i class="fa-solid fa-thumbs-up card-icon"></i>
+        <h4 class="card-heading">ONLY THE BEST QUALITY</h4>
+        <p class="card-text">Skilled professionals go above and beyond on every job. Cleaners are rated and reviewed after each task.</p>
+  
+        <i class="fa-solid fa-wand-magic-sparkles card-icon"></i>
+        <h4 class="card-heading">EASY TO GET HELP</h4>
+        <p class="card-text">Select your ZIP code, number of bedrooms and square footage, date and relax while we take care of your home.</p>
+  
+        <i class="fa-regular fa-message card-icon"></i>
+        <h4 class="card-heading">SEAMLESS COMMUNICATION</h4>
+        <p class="card-text">Online communication makes it easy for you to stay in touch with our support team.</p>
+  
+        <i class="fa-brands fa-cc-visa card-icon"></i>
+        <h4 class="card-heading">CASH FREE PAYMENT</h4>
+        <p class="card-text">Pay securely online only when the cleaning is complete.</p>
+      </div>
+  
+      <div class="card booking-summary">
+        <h2 class="booking-summary-heading">BOOKING SUMMARY</h2>
+        <div style="padding: 0% 3% ; display: flex; align-items: center;">
+          <div class="booking-summary-item">
+            <i class="fas fa-home booking-summary-icon"></i>
+            <label class="booking-summary-label">Service:</label>
+            <label class="booking-summary-value">{{ formData.selected_service }}</label>
+          </div>
+        </div>
+        
+        <div *ngIf="showAreaDropdown()" style="padding: 0% 3% ; display: flex; align-items: center;">
+          <div class="booking-summary-item">
+            <i class="fas fa-city booking-summary-icon"></i>
+          <label class="booking-summary-label">Area:</label>
+          </div>
+          <label class="booking-summary-value">{{ formData.selected_area }}</label>
+        </div>
+        <div style="padding: 0% 3% ; display: flex; align-items: center;">
+          <div class="booking-summary-item">
+            <i class="fas fa-calendar-alt booking-summary-icon"></i>
+          <label class="booking-summary-label">Date:</label>
+          </div>
+          <label class="booking-summary-value">{{ formData.selected_date}} {{formData.selected_time}}</label>
+        </div>
+        <div style="padding: 0% 3% ; display: flex; align-items: center;">
+          <div class="booking-summary-item">
+            <i class="fas fa-clock booking-summary-icon"></i>
+          <label class="booking-summary-label">How Often:</label>
+          </div>
+          <label class="booking-summary-value">{{ formData.cleaning_frequency}}</label>
+        </div>
+        <div style="padding: 0% 3% ; display: flex; align-items: center;">
+          <div class="booking-summary-item">
+            <i class="fas fa-money-bill booking-summary-icon"></i>
+          <label class="booking-summary-label">Total:</label>
+          </div>
+          <label style="font-weight: normal; font-size: 16px; font-family: Helvetica; color: rgba(236, 181, 2, 1); font-size: 44px; margin-left: 10px;">${{ calculateTotalPrice() }}</label>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Booking Form -->
+    <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container">
+      <h2 class="form-title">Complete your Booking.</h2>
+      <h6 class="form-subtitle">Great! Few details and we can complete your booking.</h6>
+      <hr>
+      <!-- Service Selection -->
+      <div class="form-group" style="margin-bottom: 30px;">
+        <label for="name" style="font-weight: 100; font-family: Helvetica;
+        color: #373e4a;">STEP 1: CHOOSE YOUR SERVICE</label>
+            <span style="font-family: Helvetica;
+            color: #ababab; font-weight: 100; line-height: 1.42857143;">Tell us about your home.</span>
+        <select id="name" name="name" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_service" required>
+          <option value="" style="display: none;" disabled selected>Select a Service</option>
+          <option value="Standard Cleaning Package" (click)="selectService('Standard Cleaning Package')" [selected]="formData.selected_service === 'Standard Cleaning Package'">Standard Cleaning Package</option>
+          <option value="Signature Cleaning Package" (click)="selectService('Signature Cleaning Package')" [selected]="formData.selected_service === 'Signature Cleaning Package'">Signature Cleaning Package</option>
+          <option value="Platinum Cleaning Package" (click)="selectService('Platinum Cleaning Package')" [selected]="formData.selected_service === 'Platinum Cleaning Package'">Platinum Cleaning Package</option>
+          <option value="Laundry" (click)="selectService('Laundry')" [selected]="formData.selected_service === 'Laundry'">Laundry</option>
+          <option value="Fridge Interior Cleaning" (click)="selectService('Fridge Interior Cleaning')" [selected]="formData.selected_service === 'Fridge Interior Cleaning'">Fridge Interior Clean</option>
+          <option value="Window Sill Cleaning" (click)="selectService('Window Sill Cleaning')" [selected]="formData.selected_service === 'Window Sill Cleaning'">Window Sill Cleaning</option>
+          <option value="Pantry Organization" (click)="selectService('Pantry Organization')" [selected]="formData.selected_service === 'Pantry Organization'">Pantry Organization</option>
+          <option value="Closet Organization" (click)="selectService('Closet Organization')" [selected]="formData.selected_service === 'Closet Organization'">Closet Organization</option>
+          <option value="Vents Cleaning" (click)="selectService('Vents Cleaning')" [selected]="formData.selected_service === 'Vents Cleaning'">Vents Cleaning</option>
+        </select> 
+        
+        <select *ngIf="showAreaDropdown()" id="area" name="area" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_area" required>
+          <option value="" style="display: none;" disabled selected>Select the Area Range</option>
+          <option value="Area upto 2500 sq ft" (click)="selectArea('Area upto 2500 sq ft')" [selected]="formData.selected_area === 'Area upto 2500 sq ft'">Area upto 2500 sq ft</option>
+          <option value="Area upto 3500 sq ft" (click)="selectArea('Area upto 3500 sq ft')" [selected]="formData.selected_area === 'Area upto 3500 sq ft'">Area upto 3500 sq ft</option>
+          <option value="Area upto 5000 sq ft" (click)="selectArea('Area upto 5000 sq ft')" [selected]="formData.selected_area === 'Area upto 5000 sq ft'">Area upto 5000 sq ft</option>
+        </select> 
+      </div>
+
+      <label style="font-weight: 100; font-family: Helvetica;
+        color: #373e4a;">STEP 2: WHO YOU ARE</label>
+        <span style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">This information will be used to contact you about your service.</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%; height:80%">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Helvetica,Helvetica">
+            <input type="text" id="first_name" name="first_name" [(ngModel)]="formData.first_name" placeholder="First Name" required>
+          </div>
+          <div style="width: 48%; font:100 16px Helvetica,Helvetica">
+            <input type="text" id="last_name" name="last_name" [(ngModel)]="formData.last_name"  placeholder="Last Name" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; height:80%; margin-top:15px">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Helvetica,Helvetica">
+            <input type="text" id="email" name="email" [(ngModel)]="formData.email" placeholder="Email" required>
+          </div>
+          <div style="width: 48%; font:100 16px Helvetica,Helvetica">
+            <input type="text" id="mobile_number" name="mobile_number" [(ngModel)]="formData.mobile_number" placeholder="Mobile Number**" required>
+          </div>
+          </div>
+        
+        
+    </div>
+
+      <label style="font-weight: 100; font-family: Helvetica;
+      color: #373e4a;">STEP 3: YOUR HOME</label>
+        <span style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Where would you like us to clean?</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%;">
+          <div style="width: 100%;">
+            <input type="text" id="address" name="address" [(ngModel)]="formData.address" placeholder="Address" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; margin-top: 15px">
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="apt_suite" name="apt_suite" placeholder="Apt/Suite #" [(ngModel)]="formData.apt_suite">
+          </div>
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="formData.city" required>
+          </div>
+          <div style="width: 20%;">
+            <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code" [(ngModel)]="formData.zip_code" required>
+          </div>
+        </div>
+        </div>        
+          <label style="font-weight: 100; font-family: Helvetica;
+          color: #373e4a;">STEP 4: WHEN WOULD YOU LIKE US TO COME?</label>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div class="row" style="margin-right: 0;">
+          <div class="col-md-6 mb-3">
+            <label for="selected_date" style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Date:</label>
+            <input type="date" id="selected_date" name="selected_date" [(ngModel)]="formData.selected_date" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="selected_time" style="font-family: Helvetica;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Time:</label>
+            <select id="selected_time" name="selected_time" [(ngModel)]="formData.selected_time" class="form-control" required>
+              <option *ngFor="let hour of generateHours()" [value]="hour">{{ hour }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  
+    <div class="form-group" style="margin-bottom: 30px;">
+      <label style="font-weight: 100; font-family: Helvetica;
+      color: #373e4a;">STEP 5: HOW OFTEN?</label>
+      <span style="font-family: Helvetica; color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
+      <div class="button-group">
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Every 3 Weeks'"
+                  (click)="selectFrequency('Every 3 Weeks')">Every 3 Weeks</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'One Time'"
+                  (click)="selectFrequency('One Time')">One Time</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Monthly'"
+                  (click)="selectFrequency('Monthly')">Monthly</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Biweekly'"
+                  (click)="selectFrequency('Biweekly')">Biweekly</button>
+
+                  <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'Weekly'"
+                  (click)="selectFrequency('Weekly')">Weekly</button>
+      </div>
+  </div>
+  <div class="form-group">
+    <div class="option-container">
+      <input type="checkbox" id="movingInOut" name="movingInOut" value="movingInOut">
+      <label for="movingInOut" class="option-label" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Moving In/Out</label>
+      <span class="tick"></span>
+    </div>
+    
+    <div class="option-container">
+      <input type="checkbox" id="balconyCleaning" name="balconyCleaning" value="balconyCleaning">
+      <label for="balconyCleaning" class="option-label" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Balcony Cleaning</label>
+      <span class="tick"></span>
+    </div>
+
+  </div>
+  
+
+  <div class="form-group">
+    <label for="additional_notes" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Additional Information:</label>
+    <textarea id="additional_notes" name="additional_notes" [(ngModel)]="formData.additional_notes"></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-6 mb-3">
+      <label class="form-label" for="parking_option" style="font-family: Helvetica;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
+      <select id="parking_option" name="parking_option" [(ngModel)]="formData.parking_option" class="form-select" style="width: 100%;
+      padding: 5px;
+      color: #555; font-weight:400;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;">
+        <option selected style="color: #555; font-weight:400; display: block;" value="street_parking" >Street Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="driveway">Driveway</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_pass">Parking Pass</option>
+        <option style="color: #555; font-weight:400; display: block;"value="guest_parking">Guest Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_lot">Parking Lot</option>
+      </select>
+    </div>
+</div>
+      <!-- Contact Details -->
+      <!-- ... -->
+      <!-- Address Input -->
+      <!-- ... -->
+      <!-- Date and Time Selection -->
+      <!-- ... -->
+      <!-- Frequency Selection -->
+      <!-- ... -->
+      <!-- Additional Options -->
+      <!-- ... -->
+      <!-- Additional Notes -->
+      <!-- ... -->
+      <!-- Parking Option -->
+      <!-- ... -->
+      <button type="submit" class="submit-button" [disabled]="!bookNowForm.valid">Submit</button>
+      <div class="zemp">
+        <div class="card-container card booking-summary">
+          <h2 class="booking-summary-heading">BOOKING SUMMARY</h2>
+          <div class="booking-summary-item">
+            <i class="fas fa-home booking-summary-icon"></i>
+            <label class="booking-summary-label">Service:</label>
+            <label class="booking-summary-value">{{ formData.selected_service }}</label>
+          </div>
+          <div class="booking-summary-item">
+            <i class="fas fa-money-bill booking-summary-icon"></i>
+            <label class="booking-summary-label">Total:</label>
+            <label class="booking-summary-value">${{ calculateTotalPrice() }}</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

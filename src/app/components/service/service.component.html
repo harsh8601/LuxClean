@@ -1,0 +1,272 @@
+<div style="background-color: rgba(249, 251, 254, 1);">
+    <header style="position: relative;">
+        <img class="temp" src="../../../assets/home-images/service.jpg" alt="" style="width: 100%; height: 400px;">
+        <h1 style="position: absolute; top: 61%; left: 50%; transform: translate(-50%, -50%); 
+        color: white; font-family: Helvetica; text-align: left; font-weight: bold; font-size: 50px;">Services</h1>
+      </header>
+    <div class="container" style="margin-left: 7%; margin-right: 7%;">
+        <div class="row justify-content-left" style="padding-left: 0px;"> <!-- Center the row -->
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="areaFilter" style="font-weight: 500; border-radius: 10px 0px 0px 10px">Search by Area :</label>
+                    </div>
+                    <select class="custom-select" id="areaFilter" style="border-radius: 0px 10px 10px 0px" (change)="applyAreaFilter($event)">
+                        <option value="all">All</option>
+                        <option value="2500">Up to 2500 sq ft</option>
+                        <option value="3500">Up to 3500 sq ft</option>
+                        <option value="5000">Up to 5000 sq ft</option>
+                        <option value="exclusive">Exclusive Services</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-container" *ngIf="selectedArea === '2500' || selectedArea === 'all'" [@fadeInOut]>
+        <h1 class="page-header">For area upto 2500 sq ft</h1>
+        <div class="card-container">
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/2.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Standard Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$147</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/standard" (click)="standardinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Standard Cleaning Package', 2500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/1.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Signature Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$247</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/signature" (click)="signatureinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Signature Cleaning Package', 2500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/3.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Platinum Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$347</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/platinum" (click)="platinuminfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Platinum Cleaning Package', 2500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="page-container" *ngIf="selectedArea === '3500' || selectedArea === 'all'" [@fadeInOut]>
+        <h1 class="page-header">For area upto 3500 sq ft</h1>
+        <div class="card-container">
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/2.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Standard Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$247</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/standard" (click)="standardinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Standard Cleaning Package', 3500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/1.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Signature Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$347</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/signature" (click)="signatureinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Signature Cleaning Package', 3500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/3.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Platinum Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$447</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/platinum" (click)="platinuminfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Platinum Cleaning Package', 3500)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="page-container" *ngIf="selectedArea === '5000' || selectedArea === 'all'" [@fadeInOut]>
+        <h1 class="page-header">For area upto 5000 sq ft</h1>
+        <div class="card-container">
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/2.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Standard Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$547</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/standard" (click)="standardinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Standard Cleaning Package', 5000)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/1.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Signature Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$747</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/signature" (click)="signatureinfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Signature Cleaning Package', 5000)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" style="height: 400px;">
+                <img src="assets/home-images/3.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div style="display: flex; flex-direction: column;">
+                        <!-- First Row -->
+                        <div style="display: flex; align-items: center; max-height: 81px">
+                            <h3 class="card-title" style="margin-right: 8px;">Platinum Cleaning Package</h3>
+                            <p class="card-description" style="padding-left: 20px; padding-bottom: 5px">$947</p>
+                        </div>
+                        <!-- Second Row -->
+                        <div class="button-container" style="margin-top: 10px; display: flex; align-items: center;">
+                            <a routerLink="/platinum" (click)="platinuminfo()" style="margin-right: 10%; width: 20%;"><i class="fas fa-2xl fa-info-circle"></i></a>
+                            <button class="btn" routerLink="/book-now" (click)="bookNow('Platinum Cleaning Package', 5000)" style="width: 70%; padding: 0 5%; background-color: rgba(236, 181, 2, 1); color:rgba(255, 255, 255, 1); height: 34px;">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="page-container" [@fadeInOut]>
+        <h1 class="page-header">Exclusive services</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/home-images/laundry.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Laundry</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Laundry', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$34</p></div>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="assets/home-images/fridge_cleaning.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Fridge Interior Clean</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Fridge Interior Clean', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$27</p></div>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="assets/home-images/window_deep.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Window Sill Cleaning</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Window Sill Cleaning', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$27</p></div>
+                </div>
+            </div>  
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/home-images/pantry_organization.jpeg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Pantry Organization</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Pantry Organization', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$57</p></div>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="assets/home-images/closet_organization.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Closet Organization</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Closet Organization', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$111</p></div>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="assets/home-images/vents_cleaning.jpg" alt="Book Now" class="card-image">
+                <div class="card-content">
+                    <div>
+                        <h3 class="card-title">Vents Cleaning</h3>
+                        <div class="button-container">
+                            <button class="btn btn-tempo" routerLink="/book-now" (click)="bookNow('Vents Cleaning', 0)">Book Now</button>
+                        </div>
+                    </div>
+                    <div><p class="card-description">$37</p></div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>

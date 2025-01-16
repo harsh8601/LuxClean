@@ -1,0 +1,34 @@
+/* app.component.css */
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #08D9D6;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  li {
+    font-size: 18px;
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+  

@@ -1,0 +1,143 @@
+.testimonial-slider {
+  background: rgba(249, 251, 254, 1);
+  padding: 2em 113px 3em;
+}
+.testimonial-title {
+  color: #fff;
+}
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background: rgba(249, 251, 254, 1);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.card-text{
+  font-size: 13px;
+  color: rgba(135, 134, 134, 1);
+
+}
+
+
+.landing-image {
+  background-image: url('/assets/home-images/footer_image.png');
+  background-size: cover;
+  background-position: center;
+  height: 350px; 
+}
+.company-name1{
+  font-family: Helvetica;
+  font-size: 52px;
+  font-weight: 550;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 20px 40px 200px 40px;
+  color: #fff;
+
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+    position: absolute;
+    left: 1em;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+    left: 5em;
+  }
+}
+
+
+/* Your existing CSS */
+
+/* Additional CSS for responsiveness */
+
+@media (max-width: 767px) {
+  .testimonial-slider {
+    padding: 2em 20px 3em; /* Adjust padding for smaller screens */
+    height: 460px !important;
+  }
+  .testimonial-title {
+    color: #000; /* Change text color for better visibility */
+  }
+  .testimonial-title h2 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+  .card {
+    margin: 0 5px; /* Adjust margin for smaller screens */
+    height: auto /* Change height to auto for responsiveness */ !important;
+    width: auto !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 74%; /* Center align carousel controls vertically */
+    transform: translateY(-50%);
+    width: 17px;
+  }
+
+  .tempo{
+    font-size: 15px !important;
+    font-weight: 200;
+    color: grey;
+  }
+  .company-name1 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+    line-height: 60px; /* Adjust line height */
+    text-align: center;
+    color: #fff;
+    padding: 0px;
+  }
+
+  
+
+.landing-image {
+  height: 250px; 
+}
+}
+
+// @media (min-width: 768px) {
+//   .carousel-inner {
+//     padding: 1em; /* Add padding for better layout */
+//   }
+//   .carousel-control-prev,
+//   .carousel-control-next {
+//     left: 1em; /* Adjust position of carousel controls */
+//     top: 95%; /* Adjust top position of carousel controls */
+//     transform: translateY(-50%);
+//   }
+//   .carousel-control-next {
+//     left: 5em; /* Adjust left position of next carousel control */
+//   }
+
+ 
+// }

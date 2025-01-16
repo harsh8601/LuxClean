@@ -1,0 +1,171 @@
+:host {
+    font-family: Helvetica; /* Fallback font families */
+}
+
+
+html { 
+    background-color: rgba(249, 251, 254, 1);
+}
+ 
+
+body{
+    background-color: rgba(249, 251, 254, 1);
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-title h1 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 250%; /* Adjusted font size */
+    color: #364F6B;
+    padding-top: 6.6%; /* Custom top padding */
+    padding-right: 20px; /* Adjust the right padding as needed */
+    padding-bottom: 10px; /* Adjust the bottom padding as needed */
+    padding-left: 20px; /* Adjust the left padding as needed */
+    font-family: 'Helvetica' 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+    max-width: 1000px; /* Increased overall box size */
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 160px;
+    padding-right: 160px;
+    max-width: 100%;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-bottom: 30px; /* Adjusted margin-bottom */
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+}
+
+.section {
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+ /* Box background color */
+    padding: 20px; /* Increased padding */
+    border-radius: 12px; /* Increased border radius */
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+    min-height: 100%;
+}
+
+.text {
+    width: auto; /* Set a fixed width for text container */
+    font-family: 'Helvetica';
+}
+
+.image-container {
+    width: 35%; /* Adjust width as needed */
+    height: 100%; /* Set image container height to 100% */
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.image-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+p {
+    font-size: 24px; /* Increased font size */
+    line-height: 1.5;
+    color: #000;
+}
+
+.highlight {
+    color: rgba(236, 181, 2, 1);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.sub-highlight {
+    color: #000;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px; /* Adjusted margin-top */
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px; /* Increased font size */
+    line-height: 1.5;
+    color: #364F6B;
+}
+
+.book-now-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+
+    .tempoz{
+        font-size: 15px !important;
+    }
+    
+    .custom-container {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+    .image-container img {
+        width: 100%;
+    }
+
+    .page-title h1 {
+        padding-top: 70px;
+        font-size: 150%; /* Adjusted font size */
+        margin-bottom: 0px;
+    }
+
+    .page-title{
+        margin-bottom: 0px;
+    }
+
+    .section{
+        p{
+            font-size: 18px;
+        }
+
+        li{
+            font-size: 16px;
+        }
+
+        ul{
+            margin-left: 0px;
+        }
+    }
+}

@@ -1,0 +1,362 @@
+/* booking-form.component.css */
+
+:host {
+  font-family: Arial, Helvetica, sans-serif; /* Fallback font families */
+}
+
+.booking-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #2296f7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.button-group {
+  display: flex;
+}
+
+.frequency-button {
+  background-color: white;
+  border: 1px solid #999999;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  margin-right: 10px;
+  font-family: 'Helvetica';
+}
+
+.frequency-button.selected {
+  background-color: orangered;
+  color: #ffffff;
+}
+
+
+.container {
+  display: flex;
+  margin-left: 12%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
+.submit-button:disabled {
+  background-color: rgba(236, 181, 2, 1); /* Green */
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  margin-left: 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#selected_time::after {
+  content: '\25BC'; /* Unicode character for downward arrow */
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75em;
+  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with user interactions */
+}
+
+.form-container {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.card-container {
+  width: 100%; /* Adjust the width as needed */
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+}
+
+.option-label {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  background-color: transparent;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+/* Optional: Custom tick design */
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: "\\2713"; /* Unicode checkmark symbol */
+  font-size: 14px;
+  color: #007bff; /* Change color as needed */
+}
+
+
+/* Header Styles */
+.header-container {
+  position: relative;
+}
+.header-image {
+  width: 100%;
+  height: 400px;
+}
+.header-title {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Helvetica;
+  text-align: left;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.card-icon {
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(236, 181, 2, 1);
+}
+.card-heading {
+  font-family: Helvetica;
+  font-weight: bold;
+  line-height: 1.1;
+  color: rgb(55, 62, 74);
+  font-size: 14px;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
+  text-align: center;
+  padding: 0px 20px;
+}
+.card-text {
+  color: #6d6e73;
+  text-align: center;
+  margin: 0px 0px 8.5px;
+  padding: 0px 20px 40px;
+}
+
+/* Booking Summary Styles */
+.booking-summary {
+  margin-top: 3%;
+}
+.booking-summary-heading {
+  font-family: Helvetica;
+  line-height: 1.1;
+  color: #364F6B;
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  padding: 0px 20px;
+}
+.booking-summary-item {
+  padding: 1% 3%;
+  display: flex;
+  align-items: center;
+}
+.booking-summary-icon {
+  text-align: center;
+  color: rgba(236, 181, 2, 1);
+}
+.booking-summary-label {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: Helvetica;
+  color: rgb(55, 62, 74);
+  padding-left: 10px;
+  padding-top: 3px;
+}
+.booking-summary-value {
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(236, 181, 2, 1);
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* Form Styles */
+.form-container {
+  margin-right: 12%;
+}
+.form-title {
+  font-family: Helvetica;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.form-subtitle {
+  font-weight: 100;
+  font-family: Helvetica;
+  color: #373e4a;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.form-label {
+  font-weight: 100;
+  font-family: Helvetica;
+  color: #373e4a;
+}
+.form-info {
+  font-family: Helvetica;
+  color: #ababab;
+  font-weight: 100;
+  line-height: 1.42857143;
+}
+.form-select {
+  width: 100%;
+  padding: 5px;
+  color: #555;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.submit-button {
+  /* Button Styles */
+}
+
+
+.zemp{
+    display: none;
+}
+
+
+.row{
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .temp{
+    display: none;
+  }
+
+  .booking-summary-label{
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+
+  .booking-summary-value {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(236, 181, 2, 1);
+    margin-left: 10px;
+  }
+
+  .frequency-button{
+    font-size: 9px;
+  }
+
+  .form-container{
+    margin-right: 0px;
+  }
+
+  .header-image{
+    height: 200px;
+  }
+
+  .header-title{
+    font-size: 40px;
+  }
+  .container{
+    margin-left: -4px;
+   // margin-right: 5px;
+  }
+
+  .zemp{
+    display: block;
+  }
+}
+
+
+
+

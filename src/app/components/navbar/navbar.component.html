@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="navbar-container container">
+    <h5 class="logo" routerLink="/" (click)="reloadPage()">LuxClean Services</h5>
+    <button class="hamburger" (click)="toggleMenu()" [ngClass]="{ 'active': isMenuOpen }">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="menu-items" [ngClass]="{ 'active': isMenuOpen }">
+      <li><a routerLink="/" class="navitem">Home</a></li>
+      <li><a routerLink="/service" class="navitem">Services & Prices</a></li>
+      <li><a routerLink="/book-now" class="navitem">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
+

@@ -1,0 +1,142 @@
+:host {
+  font-family: Helvetica; /* Fallback font families */
+}
+
+.container {
+  overflow: hidden;
+  background-size: cover;
+  margin-top: 20px;
+  padding: 0 160px; /* Space on left and right */
+}
+
+.faq-section {
+  overflow: hidden;
+  color: #000;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight:400;
+  line-height: 34.56px;
+}
+
+.heading {
+  color: #364F6B;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.faq-item {
+  margin: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  font-weight:400;
+  line-height: 34.56px;
+
+  .question {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight:400;
+    line-height: 14.56px;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 17px;
+      color: rgba(81, 101, 123, 1);
+
+    }
+
+    .toggle-icon {
+      font-size: 20px;
+    }
+  }
+
+  .answer {
+    padding: 10px;
+  // background-color: #f9f9f9;  
+    font-size: 13px;
+    font-weight:350;
+    line-height: 34.56px;
+    color: rgba(135, 134, 134, 1);
+
+  }
+
+ 
+}
+
+.card-t{
+  background-color: rgba(81, 101, 123, 1); margin-bottom: 50px;  margin-top:50px; margin-left:120px; margin-right: 120px; overflow: hidden;
+  background-size: cover;
+}
+
+.question-fq{
+  font-family: Helvetica;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f0f0f0;
+
+}
+
+
+.question-dt{
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#f0f0f0
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  .faq-section {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    line-height: 24px; /* Adjust line height for smaller screens */
+  }
+
+  .faq-item {
+    margin: 10px 0; /* Reduce vertical margin for smaller screens */
+    border-bottom: none; /* Remove border bottom for smaller screens */
+  }
+
+  .question {
+    padding: 10px 0; /* Reduce vertical padding for smaller screens */
+  }
+
+  .question h3 {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .card-t {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .question-fq {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .question-dt {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .col-md-6 {
+    text-align: center; /* Center align content on smaller screens */
+    margin-bottom: 20px; /* Add margin bottom for smaller screens */
+  }
+}
